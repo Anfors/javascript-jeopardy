@@ -1,15 +1,6 @@
 $(function(){
-    $.ajax({
-        'async': false,
-        'global': false,
-        type:'GET',
-        dataType:'json',
-        url:'board.json',
-        success:function(data){
-            map = data;
-            loadBoard();
-        }
-    });
+    map = loadMap();
+    loadBoard();
     $('.unanswered').click(function(){
         var category = $(this).parent().data('category');
         var question = $(this).data('question');
@@ -44,7 +35,7 @@ function loadBoard(){
     console.log(columns);
     $.each(map, function(i,category){
         //load category name
-        var header_class = 'text-center col-md-' + column_width;
+        var header_class = 'text-center col-sm';
         if (i === 0 && columns % 2 != 0){
             header_class += ' col-md-offset-1';
         }
@@ -52,10 +43,10 @@ function loadBoard(){
             '<div class="'+header_class+'"><h4>'+category.name+'</h4></div>'
         );
         //add column
-        var div_class = 'category col-md-' + column_width;
-        if (i === 0 && columns % 2 != 0){
+        var div_class = 'category col-sm';
+        /* if (i === 0 && columns % 2 != 0){
             div_class += ' col-md-offset-1';
-        }
+        } */
         board.append('<div class="'+div_class+'" id="cat-'+i+'" data-category="'+i+'"></div>');
         var column = $('#cat-'+i);
         $.each(category.questions, function(n,question){
@@ -82,3 +73,476 @@ function handleAnswer(){
         updateScore();
     })
 }
+
+function loadMap(){
+    return board;
+}
+
+var board = 
+[
+    {
+        "name":"category1",
+        "questions":[
+            {
+                "value":100,
+               "question":"Question 1 in category 1 for 100 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":200,
+               "question":"Question 2 in category 1 for 200 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":300,
+               "question":"Question 3 in category 1 for 300 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":400,
+               "question":"Question 4 in category 1 for 400 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name":"category2",
+        "questions":[
+            {
+                "value":100,
+               "question":"Question 1 in category 2 for 100 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":200,
+               "question":"Question 2 in category 2 for 200 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":300,
+               "question":"Question 3 in category 2 for 300 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":400,
+               "question":"Question 4 in category 2 for 400 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name":"category3",
+        "questions":[
+            {
+                "value":100,
+               "question":"Question 1 in category 3 for 100 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":200,
+               "question":"Question 2 in category 3 for 200 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":300,
+               "question":"Question 3 in category 3 for 300 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":400,
+               "question":"Question 4 in category 3 for 400 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name":"category4",
+        "questions":[
+            {
+                "value":100,
+               "question":"Question 1 in category 4 for 100 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":200,
+               "question":"Question 2 in category 4 for 200 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":300,
+               "question":"Question 3 in category 4 for 300 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":400,
+               "question":"Question 4 in category 4 for 400 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name":"category5",
+        "questions":[
+            {
+                "value":100,
+               "question":"Question 1 in category 4 for 100 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":200,
+               "question":"Question 2 in category 4 for 200 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":300,
+               "question":"Question 3 in category 4 for 300 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            },
+            {
+                "value":400,
+               "question":"Question 4 in category 4 for 400 points",
+                "answers":[
+                    {
+                        "text":"A",
+                        "correct":true
+                    },
+                    {
+                        "text":"B",
+                        "correct":false
+                    },
+                    {
+                        "text":"C",
+                        "correct":false
+                    },
+                    {
+                        "text":"D",
+                        "correct":false
+                    }
+                ]
+            }
+        ]
+    }
+];

@@ -1,48 +1,50 @@
 <!doctype html>
 <html>
 <head>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
 
 </head>
-<body>
-	<div class="container">
-        <div class="text-center">
-            <h1 style="">Javascript Jeopardy!!</h1>
-        </div>
-        <br>
-        <br>
-        <div class="panel panel-default">
-            <div class="panel-heading"></div>
-            <div class="panel-body" id="main-board">
+    <body>
+        <div class="container">
+            <div class="text-center">
+                <h1>Javascript Jeopardy</h1>
             </div>
-            <div class="panel-footer">
-                <div class="pull-right"><h4>Score: <span id="score">0</span></h4></div>
-                <div class="clearfix"></div>
+            <br>
+            <br>
+            <div class="card">
+                <div class="card-header panel-heading row" style="margin:0"></div>
+                <div class="card-body row" id="main-board">
+                </div>
+                <div class="card-footer">
+                    <div class="pull-right"><h4>Score: <span id="score">0</span></h4></div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
         </div>
-	</div>
-<div class="modal fade" id="question-modal" role="dialog" aria-labelledby="question-modal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <p id="question" style="font-size: 1.5em">One fine body&hellip;</p>
-      </div>
-      <div class="modal-footer ">
-        <div id="answers" class="text-center">
-
+    <div class="modal fade" id="question-modal" role="dialog" aria-labelledby="question-modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Modal title</h4>
         </div>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        <div class="modal-body">
+            <p id="question" style="font-size: 1.5em">One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer ">
+            <div id="answers" class="text-center">
 
-</body>
+            </div>
+        </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    </body>
 </html>
