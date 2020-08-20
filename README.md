@@ -1,6 +1,12 @@
 javascript jeopardy
 ===================
+I've updated javascript jeopardy to use newer Bootstrap and jQuery versions.  
+Also moved board.json to script.js to avoid cross-origin issues.
 
+Original git repository: https://github.com/mc706/javascript-jeopardy.git  
+
+Original Description
+===================
 Javascript Jeopardy is a single page, self contained, jeopardy board rendered using Twitter Bootstrap and Jquery.
 
 The categories, questions, answers, and scoring all driven by the board.json file.
