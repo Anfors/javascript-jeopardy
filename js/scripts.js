@@ -88,20 +88,8 @@ var board =
                "question":"Question 1 in category 1 for 100 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -110,20 +98,8 @@ var board =
                "question":"Question 2 in category 1 for 200 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -132,20 +108,8 @@ var board =
                "question":"Question 3 in category 1 for 300 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -154,20 +118,8 @@ var board =
                "question":"Question 4 in category 1 for 400 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             }
@@ -181,20 +133,8 @@ var board =
                "question":"Question 1 in category 2 for 100 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -203,20 +143,8 @@ var board =
                "question":"Question 2 in category 2 for 200 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -225,20 +153,8 @@ var board =
                "question":"Question 3 in category 2 for 300 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -247,20 +163,8 @@ var board =
                "question":"Question 4 in category 2 for 400 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             }
@@ -274,20 +178,8 @@ var board =
                "question":"Question 1 in category 3 for 100 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -296,20 +188,8 @@ var board =
                "question":"Question 2 in category 3 for 200 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -318,20 +198,8 @@ var board =
                "question":"Question 3 in category 3 for 300 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -340,20 +208,8 @@ var board =
                "question":"Question 4 in category 3 for 400 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             }
@@ -367,20 +223,8 @@ var board =
                "question":"Question 1 in category 4 for 100 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -389,20 +233,8 @@ var board =
                "question":"Question 2 in category 4 for 200 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -411,20 +243,8 @@ var board =
                "question":"Question 3 in category 4 for 300 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -433,20 +253,8 @@ var board =
                "question":"Question 4 in category 4 for 400 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             }
@@ -460,20 +268,8 @@ var board =
                "question":"Question 1 in category 4 for 100 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -482,20 +278,8 @@ var board =
                "question":"Question 2 in category 4 for 200 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -504,20 +288,8 @@ var board =
                "question":"Question 3 in category 4 for 300 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             },
@@ -526,20 +298,8 @@ var board =
                "question":"Question 4 in category 4 for 400 points",
                 "answers":[
                     {
-                        "text":"A",
+                        "text":"Answered",
                         "correct":true
-                    },
-                    {
-                        "text":"B",
-                        "correct":false
-                    },
-                    {
-                        "text":"C",
-                        "correct":false
-                    },
-                    {
-                        "text":"D",
-                        "correct":false
                     }
                 ]
             }
